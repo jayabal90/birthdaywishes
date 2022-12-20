@@ -1,4 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&display=swap');
+ *{
+    transition: all 0.2s ease-in-out;
+}
+body{
+    background: #008888;
+    display: grid;
+    place-items:center;
+    height: 100vh;
+    margin: 0;
+}
+.card{
+    /* background: #fdfdfd; */
+    background: #ec8e4f;
+    background: -webkit-linear-gradient(bottom, #ec8e4f, #DA0B08);
+    background: -moz-linear-gradient(bottom, #ec8e4f, #DA0B08);
+    background: linear-gradient(to top, #ec8e4f, #DA0B08);
+    border-radius: 4px;
+    height: 90vh;
+    width: 90vw;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    overflow: hidden;
+
+}
+
+@media only screen and (min-width:1000px){
+    .card{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .card img.birthday{
+        width: 100%;
+        max-width: 50vw;
+        max-height: unset;
+    }
+}
+@media only screen and (max-height:640px){
+    .card{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .card img.birthday{
+        width: 100%;
+        max-width: 50vw;
+        max-height: unset;
+    }
+}
+img.birthday{
+    max-height: 50vh;
+}
+.text{
+    padding: 1rem;
+}
+.muted{
+    opacity: 0.8;
+}
+.space{
+    height: 100px;
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -97,4 +161,4 @@ body{
 {
     top:100px;
     background-color: burlywood;
-}
+} */
